@@ -1,0 +1,26 @@
+
+
+
+.lista-suspensa{
+    max-width: 100%;
+    background-color: #FFFBF5;
+    border-radius: 20px;
+    
+}
+.lista-suspensa label{
+    display: block;
+    margin: 8px 0 0 0px;
+    font-size: 24px;
+    font-family: "valorant";
+    color: #000;
+    background-color: #FD4556;
+}
+
+ .lista-suspensa select{
+    width: 100%;
+    border: none;
+    font-size: 24px;
+    padding: 24px;
+    box-sizing: border-box;
+    border-radius: 24px;
+ }

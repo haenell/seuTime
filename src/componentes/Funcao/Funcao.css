@@ -1,0 +1,18 @@
+.funcao{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 60px;
+    max-height: 700px;
+    box-shadow: 0 15px 10px 15px #59595b;
+}
+
+.funcao h3{
+    font-family: "valorant";
+    font-size: 32px;
+    border-bottom: 4px solid ;
+    padding-bottom: 8px;
+    display: inline-block;
+}

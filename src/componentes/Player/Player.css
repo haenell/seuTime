@@ -1,0 +1,63 @@
+body{
+    background:url("/public/imagens/valorant-wallpaper-15.jpg") no-repeat;
+}
+
+.colaborador {
+    width: 280px;
+}
+
+.colaborador .cabecalho {
+    /* background: url("/public/imagens/mapas/breeze.jpg"); */
+    border-radius: 10px 10px 0px 0px;
+    max-width: 280px;
+    float: top;
+    height: 180px;
+}
+
+#perfil {
+    width: 125px;
+    border-radius: 50%;
+    position: relative;
+    bottom: -200px;
+    z-index: 1000;
+    box-shadow: 0 1px 3px 2px #59595b;
+}
+
+#mapa {
+    max-width: 100%;
+    /* height: auto;   */
+    object-fit: cover;
+    z-index: 0;
+    float: left;
+    border-radius: 10px 10px 0 0;
+}
+
+#arma {
+    width: 200px;
+    filter: drop-shadow(3px 3px 3px #222);
+}
+
+.colaborador .rodape {
+    background: #e6f9fa;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.08);
+    border-radius: 0px 0px 10px 10px;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+.colaborador .rodape h4 {
+    color: #000;
+    font-size: 30px;
+    line-height: 22px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    padding: 60px 0 35px 0;
+    font-family: "valorant";
+}
+
+.colaborador .rodape h5 {
+    font-size: 18px;
+    line-height: 22px;
+    color: #212121;
+    padding: 0 16px;
+}
