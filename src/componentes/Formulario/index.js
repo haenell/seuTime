@@ -47,14 +47,9 @@ const Formulario = (props) =>{
     const {setState: setTeamState} = useContext(TeamContext);
 
     function onSubmit (){      
-        setGlobalState({nome, funcao, arma, mapa});
-        // setTeam([...team,{
-        //     nome,
-        //     funcao,
-        //     mapa,
-        //     arma,
-        //     imagem
-        // }])
+        setGlobalState({nome, funcao, arma, mapa, imagem});
+        console.log(imagem);
+       
         props.setTeamState({
             nome,
             funcao,
@@ -64,15 +59,21 @@ const Formulario = (props) =>{
         })
     }
 
+    function salvar(e){
+        console.log(e.target.value)
+        setImagem(e.target.value)
+    }
+
     const aoSalvar= (event) => {
-        event.preventDefault()   
+        event.preventDefault() 
     }
 
     return (
         <section className="formulario">
             <form onSubmit={aoSalvar}>
                 <h2>Fill in the player's information:</h2>
-                <CampoTexto obrigatorio = {true} 
+                <CampoTexto 
+                    obrigatorio = {true} 
                     placeholder = "Player's name" 
                     label = "Name"
                     valor = {nome}
@@ -100,11 +101,12 @@ const Formulario = (props) =>{
                     valor = {arma}
                     aoAlterado = {valor =>setArma(valor)}
                 />                 
-                <CampoTexto obrigatorio = {true} 
-                    placeholder = "Player's photo" 
-                    label = "Image"
-                    valor = {imagem}
-                    aoAlterado = {valor => setImagem(valor)}
+                <CampoTexto 
+                    obrigatorio = {true} 
+                    placeholder = "your GitHub profile" 
+                    label = "GitHub Profile"
+                    valor = {imagem}                   
+                    aoAlterado = {valor => setImagem(valor)}                    
                 />   
                 <Botao onClick={onSubmit}>Create player card</Botao>
             </form>

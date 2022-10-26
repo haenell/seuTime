@@ -8,7 +8,7 @@ const Funcao = (props) => {
     return (      
         <section className="funcao" style={css}>
             <h3 style={{ borderColor: props.corSecundaria }}>{props.funcao}</h3>
-            <Player nome={props.nome} arma={props.arma} mapa={props.mapa}/>
+            <Player nome={props.nome} arma={props.arma} mapa={props.mapa} imagem={props.imagem}/>
         </section>
     )
 }

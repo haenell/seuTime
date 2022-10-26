@@ -1,23 +1,27 @@
-import "./Player.css"
-import React, { useContext, setState, useState } from "react"
-import PlayerContext from "../../Contexts/PlayerContexts";
-
+import "./Player.css";
+import React from "react";
 
 const Player = (props) => {
-    const { setState, state } = useContext(PlayerContext);
-    const [arma, setArma] = useState("");
-    return (
-        <div className="colaborador">           
-            <div className="cabecalho">           
-                <img id="perfil" src={"imagens/don-vito.jpg"} alt="" />
-                <img id="mapa" src={`imagens/mapas/${props.mapa}.jpg`} alt="" />
-            </div>
-            <div className="rodape">
-                <h4>{props.nome}</h4>
-                <img id="arma" src={`imagens/armas/${props.arma}.png`} alt="" />
-            </div>
-        </div>
-    )
-}
+  return (
+    <div className="player">
+      <div className="cabecalho">
+        <img
+          id="perfil"
+          src={`https://github.com/${props.imagem}.png`}
+          alt={props.nome}
+        />
+        <img
+          id="mapa"
+          src={`imagens/mapas/${props.mapa}.jpg`}
+          alt={props.mapa}
+        />
+      </div>
+      <div className="rodape">
+        <h4>{props.nome}</h4>
+        <img id="arma" src={`imagens/armas/${props.arma}.png`} alt="" />
+      </div>
+    </div>
+  );
+};
 
-export default Player
+export default Player;
