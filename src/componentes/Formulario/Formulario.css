@@ -1,20 +1,19 @@
-h2{
-    font-family: "valorant";
-    color: #000;
-    text-decoration: underline;
+h2 {
+  font-family: "valorant";
+  color: #000;
+  text-decoration: underline;
 }
 
-
-.formulario{
-    display: flex;
-    justify-content: center;
-    margin: 80px 0;
+.formulario {
+  display: flex;
+  justify-content: center;
+  margin: 80px 0;
 }
 
-.formulario form{
-    max-width: 80%;
-    background-color: #FD4556;
-    border-radius: 20px;
-    padding: 36px 64px;
-    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.08);
+.formulario form {
+  max-width: 80%;
+  background-color: #fd4556;
+  border-radius: 20px;
+  padding: 36px 64px;
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.08);
 }
