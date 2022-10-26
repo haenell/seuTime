@@ -33,7 +33,6 @@ const Formulario = (props) => {
 
   function onSubmit() {
     setGlobalState({ nome, funcao, arma, mapa, imagem });
-    console.log(imagem);
 
     props.setTeamState({
       nome,
