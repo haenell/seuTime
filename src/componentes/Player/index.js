@@ -1,7 +1,7 @@
-import "./Player.css";
-import React from "react";
+import './Player.css'
+import React from 'react'
 
-const Player = (props) => {
+const Player = props => {
   return (
     <div className="player">
       <div className="cabecalho">
@@ -21,7 +21,7 @@ const Player = (props) => {
         <img id="arma" src={`imagens/armas/${props.arma}.png`} alt="" />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Player;
+export default Player
